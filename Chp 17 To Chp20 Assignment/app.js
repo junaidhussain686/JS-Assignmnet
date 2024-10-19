@@ -94,10 +94,10 @@
 
 //Question No-10
 
-// for(var i=5;i<=100;i++){
-//     if(i%5==0)
-//         console.log(i)
-// }
+for(var i=5;i<=100;i++){
+    if(i%5==0)
+        console.log(i)
+}
 
 
 
