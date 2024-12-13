@@ -1,0 +1,79 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(./Ramazan\ counter.jpg) no-repeat center center/cover;
+    color: #fff;
+    transition: background 1s ease-in-out;
+}
+/* Container holding all the content */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #2e6c2f;
+}
+
+/* Countdown box style */
+.countdown {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 30px;
+    background-color: #2e6c2f;
+    color: white;
+    border-radius: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease;
+}
+
+.countdown:hover {
+    transform: scale(1.05);
+}
+
+.countdown span {
+    font-size: 24px;
+    color: #ff7043;
+}
+
+.message {
+    font-size: 18px;
+    color: #2e6c2f;
+    margin-top: 20px;
+}
+
+.highlight {
+    font-size: 22px;
+    color: #ff7043;
+    font-weight: 700;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .countdown {
+        font-size: 28px;
+        padding: 20px;
+    }
+}
