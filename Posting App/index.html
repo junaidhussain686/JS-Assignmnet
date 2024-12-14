@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SocialFeed</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>SocialFeed</h1>
+    </header>
+
+    <div class="create-post">
+      <input type="text" id="user-name" placeholder="Enter your name" />
+      <input type="text" id="post-title" placeholder="Post Title" />
+      <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+      <input type="file" id="background-image" accept="image/*" />
+      <button onclick="createPost()">Post</button>
+    </div>
+
+    <div id="post-feed" class="post-feed">
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
