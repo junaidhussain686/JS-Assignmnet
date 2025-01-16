@@ -1,0 +1,231 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <nav class="navbar bg-primary navbar-expand-lg">
+                <div class="container">
+                <a class="navbar-brand" href="#"
+                    ><img class="img-fluid" src="./Assets/Logo.jpg" alt="logo"
+                /></a>
+                <button
+                    class="navbar-toggler bg-white"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                    aria-label="Toggle navigation"
+                >
+                    <i class="fa-solid fa-bars fs-2 textColor"></i>
+                </button>
+                <div
+                    class="offcanvas offcanvas-start bg-primary"
+                    tabindex="-1"
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                >
+                    <div class="offcanvas-header">
+                    <a class="navbar-brand" href="#"
+                        ><img class="img-fluid" src="./Assets/Logo.jpg" alt="logo"
+                    /></a>
+                    <button
+                        type="button"
+                        class="btn-close bg-white"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                    ></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-end">
+                    <div class="button">
+                        <button
+                        onclick="result()"
+                        class="btn btn-light fw-bold textColor"
+                        >
+                        Results
+                        </button>
+                        <button onclick="logOut()" class="btn text-white fw-bold">
+                        <span class="name"></span>
+                        <span><i class="fa-solid fa-right-from-bracket"></i></span>
+                        </button>
+                    </div>
+                    <div class="form-check form-switch ms-5">
+                        <input
+                        onchange="darkmode()"
+                        class="form-check-input fs-2"
+                        type="checkbox"
+                        role="switch"
+                        id="buttondark"
+                        />
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </nav>
+        
+            <section class="mt-5">
+                <div class="container">
+                <div class="row">
+                    <div class="col-10 mb-3">
+                    <h1 class="textColor fw-light texting">
+                        Web & Mobile Application
+                        <span class="fs-5">(Subject 2)</span>
+                    </h1>
+                    </div>
+                    <hr class="texting" />
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item my-2">
+                        <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseOne"
+                        >
+                            HTML & CSS
+                        </button>
+                        </h2>
+                        <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                        >
+                        <div class="accordion-body">
+                            <div class="col-10">
+                            <table class="w-100 border border-2 border-black">
+                                <tr>
+                                <td>Quiz Name</td>
+                                <td colspan="2">HTML & CSS</td>
+                                </tr>
+                                <tr>
+                                <td>Total Questions</td>
+                                <td>15</td>
+                                </tr>
+                                <tr>
+                                <td>Total Time</td>
+                                <td>15 Minuts</td>
+                                </tr>
+                                <tr>
+                                <td>Passing Score</td>
+                                <td>70%</td>
+                                </tr>
+                            </table>
+                            <button
+                                onclick="continueBtn()"
+                                class="btn rounded-0 bg-primary text-white mt-2"
+                            >
+                                Continue
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item my-2">
+                        <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseTwo"
+                        >
+                            JavaScript
+                        </button>
+                        </h2>
+                        <div
+                        id="flush-collapseTwo"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                        >
+                        <div class="accordion-body">
+                            <div class="col-10">
+                            <table class="w-100 border border-2 border-black">
+                                <tr>
+                                <td>Quiz Name</td>
+                                <td colspan="2">JavaScript</td>
+                                </tr>
+                                <tr>
+                                <td>Total Questions</td>
+                                <td>15</td>
+                                </tr>
+                                <tr>
+                                <td>Total Time</td>
+                                <td>15 Minuts</td>
+                                </tr>
+                                <tr>
+                                <td>Passing Score</td>
+                                <td>70%</td>
+                                </tr>
+                            </table>
+                            <button
+                                onclick="continueBtn()"
+                                class="btn rounded-0 bg-primary text-white mt-2"
+                            >
+                                Continue
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item my-2">
+                        <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseThree"
+                        >
+                            Advance JavaScript
+                        </button>
+                        </h2>
+                        <div
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                        >
+                        <div class="accordion-body">
+                            <div class="col-10">
+                            <table class="w-100 border border-2 border-black">
+                                <tr>
+                                <td>Quiz Name</td>
+                                <td colspan="2">Advance JavaScript</td>
+                                </tr>
+                                <tr>
+                                <td>Total Questions</td>
+                                <td>15</td>
+                                </tr>
+                                <tr>
+                                <td>Total Time</td>
+                                <td>15 Minuts</td>
+                                </tr>
+                                <tr>
+                                <td>Passing Score</td>
+                                <td>70%</td>
+                                </tr>
+                            </table>
+                            <button
+                                onclick="continueBtn()"
+                                class="btn rounded-0 bg-primary text-white mt-2"
+                            >
+                                Continue
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="https://kit.fontawesome.com/a60267d76b.js" crossorigin="anonymous"></script>
+            <script src="app.js"></script>
+        </body>
+        </html>
