@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="head">
+      <div class="logo">
+        <img class="sidebarlogo" src="./Assets/logo.jpg" alt="#" />
+      </div>
+      <div class="d-flex align-item-center">
+        <a href="#"><p class="beta-version">V 0.1 Beta</p></a>
+      </div>
+    </header>
+    <section class="mt-5">
+      <div class="container">
+        <div class="col-12 text center">
+          <h1 class="headingone fw-light texting textColor">
+            Quiz Application
+          </h1>
+          <h2 class="mt-5 fw-light headingTwo texting">
+            Saylani Mass IT Training Program
+          </h2>
+          <p class="fw-light fs-5 mt-4 para-text texting">
+            Saylani Mass IT Training program is an institude who delivers latest
+            IT Education.
+            <br />
+            Saylani Mass IT Training Department is one of the Department which
+            is running under Saylani Welfare Trust Management.
+          </p>
+          <div class="button mt-5">
+            <h5 class="texting">Start Your Exam Here</h5>
+            <div class="mt-3 btn-login">
+              <button
+                type="button"
+                class="btn bg-primary fw-bold text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Log In
+              </button>
+              <button
+                type="button"
+                class="btn bg-primary fw-bold text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal1"
+              >
+                Sign In
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h3 class="text-center fw-bold login_head">Student Login</h3>
+            <div class="email">
+              <label for="exampleInputEmail1" class="form-label"
+                ><i class="fa-solid fa-envelope mx-1"></i> Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="pass mt-3">
+              <label for="exampleInputPassword1" class="form-label"
+                ><i class="fa-solid fa-lock mx-1"></i> Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+          </div>
+          <div class="footer text-center py-2">
+            <button
+              type="button"
+              class="btn bg-primary text-white"
+              onclick="login()"
+            >
+              Log In
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h3 class="text-center fw-bold login_head">Student Signup</h3>
+            <div class="name">
+              <label for="NameFormControlInput1" class="form-label"
+                ><i class="fa-solid fa-user"></i> Full Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="NameFormControlInput1"
+              />
+            </div>
+            <div class="email mt-3">
+              <label for="exampleInputEmail2" class="form-label"
+                ><i class="fa-solid fa-envelope mx-1"></i> Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail2"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="pass mt-3">
+              <label for="exampleInputPassword2" class="form-label"
+                ><i class="fa-solid fa-lock mx-1"></i>Create Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword2"
+              />
+            </div>
+          </div>
+          <div class="footer text-center py-2">
+            <button
+              onclick="signUp()"
+              type="button"
+              class="btn bg-primary text-white"
+              data-bs-dismiss="modal"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      src="https://kit.fontawesome.com/a60267d76b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
